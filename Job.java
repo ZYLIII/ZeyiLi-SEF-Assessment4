@@ -15,6 +15,12 @@ public class Job {
     private String[] jobRequiredSkills; // a list of skills; each skill is 1 word (e.g. C#) or a maximum of two words (e.g, Software Architecture)
     private double jobSalary;
     private String jobDescription;
+    private String fileName = "jobs.txt";  // default file name
+
+    // a setter for filename
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
 
     // constructor
     public Job(String number, String title, String posterName, String posterAddress, String date, String experienceLevel, String type, String[] skills, double salary, String description) {
@@ -54,6 +60,7 @@ public class Job {
 
                 // Return true indicating job was added successfully
                 return true;
+
             } catch (IOException e) {
                 // Print stack trace in case of exception
                 e.printStackTrace();
@@ -94,6 +101,7 @@ public class Job {
                 }
                 writer.close();
                 return true;
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

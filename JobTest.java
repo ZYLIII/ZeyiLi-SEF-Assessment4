@@ -3,14 +3,6 @@ import java.io.*;
 
 // Class to test the Job class and its methods
 class JobTest {
-    // Before each test, create a text file with a single job in it
-    @BeforeEach
-    void setUp() throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter("jobs.txt"));
-        writer.write("12345MMM_,Job Title,Company Name,Melbourne, Victoria, Australia,2023-05-05,Senior,Full-time,[Software Architecture, C#, SQL],120000,Job Description");
-        writer.newLine();
-        writer.close();
-    }
 
     // Test valid cases for addJob method
     @Test
@@ -83,8 +75,8 @@ class JobTest {
     @Test
     void testUpdateJob_SalaryIncrease() {
         String[] skills = {"Java", "Spring"};
-        Job job1 = new Job("12345AAA@", "Java Developer", "ABC Corp", "Melbourne, Vic, Australia", "2023-06-01", "Senior", "Full-time", skills, 140000, "Updated Job Description");
-        Job job2 = new Job("23451BBB#", "Python Developer", "XYZ Inc", "Sydney, NSW, Australia", "2023-07-01", "Junior", "Part-time", skills, 66000, "Updated Job Description");
+        Job job1 = new Job("12345AAA@", "Java Developer", "ABC Corp", "Melbourne, Vic, Australia", "2023-06-01", "Senior", "Full-time", skills, 180000, "Updated Job Description");
+        Job job2 = new Job("23451BBB#", "Python Developer", "XYZ Inc", "Sydney, NSW, Australia", "2023-07-01", "Junior", "Part-time", skills, 70000, "Updated Job Description");
 
         Assertions.assertTrue(job1.updateJob());
         Assertions.assertTrue(job2.updateJob());
