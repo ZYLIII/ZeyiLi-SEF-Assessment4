@@ -1,1 +1,2 @@
 # ZeyiLi-SEF-Assessment4
+"The program I submitted to GitHub is designed to manage job postings. Each job is an instance of the Job class, and we can add jobs to a text file with addJob or update them with updateJob. I also included a comprehensive suite of tests to ensure that the job data always meets our conditions. You can run these tests to verify the program's functionality for yourself, and any changes they make to the job data will be visible in the jobs.txt file.
