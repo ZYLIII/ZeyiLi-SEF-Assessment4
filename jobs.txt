@@ -1,1 +1,3 @@
-12345MMM_,Job Title,Company Name,Melbourne, Victoria, Australia,2023-05-05,Senior,Full-time,[Software Architecture, C#, SQL],120000,Job Description
+12345AAA@,Java Developer,ABC Corp,Melbourne, Vic, Australia,2023-06-01,Senior,Full-time,Java, Spring,180000.0,Updated Job Description
+23451BBB#,Python Developer,XYZ Inc,Sydney, NSW, Australia,2023-07-01,Junior,Part-time,Java, Spring,70000.0,Updated Job Description
+34512CCC%,C# Developer,PQR Limited,Canberra, ACT, Australia,2023-08-01,Medium,Internship,C#, ASP.NET, MVC,98000.0,Updated Job Description
